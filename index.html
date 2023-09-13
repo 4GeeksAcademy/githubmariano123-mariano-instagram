@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="2style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/7c4695a54d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-1" href="#">
+                <i class="fab fa-instagram" style="margin-right: 5px;"></i>
+                <span class="titulo">Instagram</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" data-toggle="modal" data-target="#createPostModal">
+                            <span class="btn btn-success">
+                                Create a new post
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Accessibility</a>
+                            <a class="dropdown-item" href="#">Privacy and Data</a>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal" tabindex="-1" role="dialog" id="createPostModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create a new post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <p style="margin-left:10px;margin-top: 10px;"><strong>Caption:</strong></p>
+                <div class="modal-body">
+                    <p>Add the caption of your post here.</p>
+                </div>
+                <div class="botones-modal">
+                    <div style="margin-left: 10px">
+                        <button id="camera">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button class="location" style="margin-right: 10px;">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button container text-center mt-5">
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="showVerticalGrid()">
+                <i class="fa-solid fa-calendar-days"></i>
+            </button>
+            <button class="btn btn-primary" onclick="showHorizontalGrid()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    <div class="vertical-images text-center">
+        <div class="image-container text-center">
+            <div class="col-12 mb-3 mt-3">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="mb-0 float-left"><strong>My Crazy Dog Spark!</strong></p>
+                        <p class="mb-0 float-right">04/09</p>
+                    </div>
+                </div>
+                <img src="https://r1.community.samsung.com/t5/image/serverpage/image-id/2816083i15F3AFFD7643AF3E/image-size/large?v=v2&px=999"
+                    alt="Imagen 2" class="img-fluid img-fixed" style="width: 800px; height: 500px;">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="mb-0 float-left"><strong>26985 likes</strong></p>
+                        <p class="mb-0 float-left">This is an example of a very good photo that you can post on
+                            Instagram</p>
+                    </div>
+                </div>
+                <div class="col-12 mb-3 mt-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mb-0 float-left"><strong>Greatness of Croatia</strong></p>
+                            <p class="mb-0 float-right">04/09</p>
+                        </div>
+                    </div>
+                    <img src="https://images.hola.com/imagenes/viajes/20221115220884/que-ver-en-croacia-imprescindibles/1-164-395/00-portada-adobestock536898055-m.jpg?tx=w_680"
+                        alt="Imagen 2" class="img-fluid img-fixed" style="width: 800px; height: 500px;">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mb-0 float-left"><strong>26985 likes</strong></p>
+                            <p class="mb-0 float-left">This is an example of a very good photo that you can post on
+                                Instagram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-3 mt-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mb-0 float-left"><strong>Crsitiano Happy</strong></p>
+                            <p class="mb-0 float-right">06/10</p>
+                        </div>
+                    </div>
+                    <img src="https://phantom-marca.unidadeditorial.es/99b966823447e6cd39847a041258e28b/resize/828/f/jpg/assets/multimedia/imagenes/2023/06/21/16873088304112.jpg"
+                        alt="Imagen 3" class="img-fluid img-fixed" style="width: 800px; height: 500px;">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mb-0 float-left"><strong>23242 likes</strong></p>
+                            <p class="mb-0 float-left">This is an example of a very good photo that you can post on
+                                Instagram</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Cuadrícula Horizontal -->
+    <div class="horizontal-grid">
+        <div class="row">
+            <div class="col-4">
+                <img src="https://r1.community.samsung.com/t5/image/serverpage/image-id/2816083i15F3AFFD7643AF3E/image-size/large?v=v2&px=999"
+                    alt="Imagen 1" class="img-fluid img-fixed" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-4">
+                <img src="https://images.hola.com/imagenes/viajes/20221115220884/que-ver-en-croacia-imprescindibles/1-164-395/00-portada-adobestock536898055-m.jpg?tx=w_680"
+                    alt="Imagen 2" class="img-fluid img-fixed" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-4">
+                <img src="https://phantom-marca.unidadeditorial.es/99b966823447e6cd39847a041258e28b/resize/828/f/jpg/assets/multimedia/imagenes/2023/06/21/16873088304112.jpg"
+                    alt="Imagen 3" class="img-fluid img-fixed" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-grid">
+        <div class="row">
+            <div class="col-4">
+                <img src="https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2022/08/amigos-amistad-2798475.jpg?tf=3840x"
+                    alt="Imagen 1" class="img-fluid img-fixed" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-4">
+                <img src="https://www.revistamoi.com/wp-content/uploads/2016/02/gente-juzga-b.jpg" alt="Imagen 2"
+                    class="img-fluid img-fixed" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-4">
+                <img src="https://cdn.sortiraparis.com/images/80/69688/837774-que-faire-aujourd-hui-ce-a-paris-ou-en-ile-de-france.jpg"
+                    alt="Imagen 3" class="img-fluid img-fixed" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-grid">
+        <div class="row">
+            <div class="col-4">
+                <img src="https://mibebeyyo.mx/images/mujer-actual/Familia/frases-para-familia.webp" alt="Imagen 1"
+                    class="img-fluid img-fixed" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-4">
+                <img src=https://www.forofamilia.org/wp-content/uploads/2016/04/Familia-unida.jpg" alt="Imagen 2"
+                    class="img-fluid img-fixed" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-4">
+                <img src="https://www.pixartprinting.it/blog/wp-content/uploads/2022/11/IMMAGINE-1.jpg" alt="Imagen 3"
+                    class="img-fluid img-fixed" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        function showVerticalGrid() {
+            $(".vertical-images").show();
+            $(".horizontal-grid").hide();
+        }
+        function showHorizontalGrid() {
+            $(".horizontal-grid").show();
+            $(".vertical-images").hide();
+        }
+    </script>
+</body>
+
+</html>
